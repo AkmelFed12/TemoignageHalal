@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin - Gestion des Témoignages</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Espace Admin</h1>
+    <nav>
+      <a href="index.html">Accueil</a>
+    </nav>
+  </header>
+
+  <main>
+    <div id="login-form">
+      <h2>Connexion Admin</h2>
+      <input type="text" id="username" placeholder="Identifiant">
+      <input type="password" id="password" placeholder="Mot de passe">
+      <button onclick="login()">Se connecter</button>
+    </div>
+
+    <div id="admin-panel" style="display:none;">
+      <h2>Ajouter un témoignage</h2>
+      <input type="text" id="title" placeholder="Titre">
+      <textarea id="content" placeholder="Contenu du témoignage"></textarea>
+      <button onclick="addArticle()">Ajouter</button>
+
+      <h2>Liste des témoignages</h2>
+      <ul id="article-list"></ul>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 ASAA</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
